@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.checkbox.MaterialCheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/filter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:checked="true"
+    android:ellipsize="marquee"
+    android:marqueeRepeatLimit="marquee_forever"
+    android:padding="16dp"
+    android:singleLine="true"
+    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+    android:textColor="?android:attr/textColorPrimary"
+    app:buttonTint="@color/checkbox_tint"
+    tools:viewBindingIgnore="true" />

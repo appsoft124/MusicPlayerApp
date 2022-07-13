@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- App name for debug and release flavors -->
+    <string name="app_name_release" tools:ignore="UnusedResources">Music Player GO</string>
+    <string name="app_name_debug" tools:ignore="UnusedResources">MPGO debug</string>
+
+    <!-- External links -->
+    <string name="app_git">https://github.com/enricocid/Music-Player-GO</string>
+
+    <!-- Formatted strings used in RVs items and other TextViews -->
+    <string name="duration_artist_date_added">%1s, %2s, %3s</string>
+    <string name="duration_date_added">%1s, %2s</string>
+    <string name="rates">%1d&#160;kHz,&#160;%2d&#160;kbps</string>
+    <string name="artist_and_album">%1s&#160;/&#160;%2s</string>
+    <string name="track_song">&lt;b>%1d&lt;/b>&#160;-&#160;%2s</string>
+    <string name="year_and_duration">%1s&#160;-&#160;%2s</string>
+    <string name="favorite_subtitle">&lt;b>%1s&lt;/b>&#160;-&#160;%2s</string>
+
+    <!-- Formatting symbols -->
+    <string name="slash">/</string>
+    <string name="unknown_year">N&#x2F;A</string>
+    <string name="freq_k">%1dk</string>
+
+    <!-- Playback speed menu -->
+    <string name="speed_0">0.25x</string>
+    <string name="speed_1">0.5x</string>
+    <string name="speed_2">0.75x</string>
+    <string name="speed_4">1.25x</string>
+    <string name="speed_5">1.5x</string>
+    <string name="speed_6">1.75x</string>
+    <string name="speed_7">2.0x</string>
+    <string name="speed_8">2.25x</string>
+    <string name="speed_9">2.5x</string>
+
+    <!-- Sorting menu -->
+    <string name="sorting_pref_ascending">A-Z</string>
+    <string name="sorting_pref_descending">Z-A</string>
+
+    <!-- Notifications -->
+    <string name="song_title_notification">&lt;b>%1s&lt;/b></string>
+
+    <!-- Extended FAB placeholder -->
+    <string name="extended_fab_placeholder">0</string>
+
+    <!-- Extended FAB placeholder -->
+    <string name="eq">EQ</string>
+
+    <!-- Other preferences titles/subtitles -->
+    <string name="category_ui">UI</string>
+    <string name="category_audio">Audio</string>
+    <string name="accent_200">%1s 200</string>
+
+    <!-- Preferences keys used in settings-->
+    <string name="theme_pref">theme_pref</string>
+    <string name="theme_pref_light">theme_pref_light</string>
+    <string name="theme_pref_dark">theme_pref_dark</string>
+    <string name="theme_pref_auto">theme_pref_auto</string>
+    <string name="theme_pref_black">theme_pref_black</string>
+    <string name="accent_pref">style_pref</string>
+    <string name="covers_pref">covers_pref</string>
+    <string name="active_tabs_def_pref">active_tabs_def_pref</string>
+    <string name="active_tabs_pref">active_tabs_pref</string>
+    <string name="on_list_ended_pref">on_list_ended_pref</string>
+    <string name="notif_actions_pref">notification_actions_pref</string>
+    <string name="fast_seeking_pref">fast_seeking_pref</string>
+    <string name="precise_volume_pref">precise_volume_pref</string>
+    <string name="focus_pref">focus_pref</string>
+    <string name="headset_pref">headsets_pref</string>
+    <string name="anim_pref">anim_pref</string>
+    <string name="filter_pref">strings_filter_pref</string>
+
+    <!-- Sorting -->
+    <string name="artists_sorting_pref">sorting_artists_pref</string>
+    <string name="albums_sorting_pref">sorting_album_details_pref</string>
+    <string name="folders_sorting_pref">sorting_folder_details_pref</string>
+    <string name="all_music_sorting_pref">sorting_all_music_tab_pref</string>
+
+    <!-- Other preferences keys -->
+    <string name="saved_eq_settings">eq_settings_pref</string>
+    <string name="latest_played_song_pref">to_restore_song_pref</string>
+    <string name="is_queue_pref">is_queue_pref</string>
+    <string name="favorites_pref">favorite_songs_pref</string>
+    <string name="queue_pref">queue_songs_pref</string>
+    <string name="latest_volume_pref">latest_volume_pref</string>
+    <string name="latest_playback_vel_pref">latest_playback_vel_pref</string>
+    <string name="song_visual_pref">song_visual_pref</string>
+    <string name="playback_vel_pref">playback_vel_pref</string>
+    <string name="continue_on_end_pref">continue_on_end_pref</string>
+    <string name="has_completed_playback_pref">has_completed_playback_pref</string>
+    <string name="locale_pref">locale_pref</string>
+    <string name="ask_confirmation_pref">ask_confirmation_pref</string>
+    <string name="save_state_pref">save_state_pref</string>
+</resources>

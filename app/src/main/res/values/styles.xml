@@ -1,0 +1,88 @@
+<resources>
+
+    <!-- Bottom sheets theming -->
+    <!-- https://bryanherbst.com/2020/05/04/bottom-sheet-corners/ -->
+    <style name="ThemeOverlay.Demo.BottomSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.Demo.BottomSheet</item>
+        <item name="colorOnSurface">@color/mainBg</item>
+    </style>
+
+    <style name="Widget.Demo.BottomSheet" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Demo</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Demo" parent="">
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeTopRight">16dp</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <!-- Custom dialogs -->
+    <style name="ThemeOverlay.App.MaterialAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="materialAlertDialogTitleTextStyle">@style/MaterialAlertDialog.App.Title.Text</item>
+        <item name="android:backgroundTint">@color/mainBg</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialAlertDialog.Rounded</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MaterialAlertDialog.Rounded" parent="">
+        <item name="cornerSize">@dimen/md_corner_radius</item>
+    </style>
+
+    <!-- Custom dialogs title theming -->
+    <style name="MaterialAlertDialog.App.Title.Text" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Headline6</item>
+    </style>
+
+    <!-- Settings - alert dialogs -->
+    <style name="Options.DialogsStyle" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="colorBackgroundFloating">@color/mainBg</item>
+        <item name="dialogCornerRadius">@dimen/md_corner_radius</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/MaterialAlertDialog.App.Title.Text</item>
+    </style>
+
+    <style name="SpinnerMenu" parent="Widget.AppCompat.Spinner">
+        <item name="android:popupBackground">@drawable/popupmenu_background</item>
+    </style>
+
+    <style name="PopupMenu" parent="ThemeOverlay.MaterialComponents">
+        <item name="android:popupBackground">@drawable/popupmenu_background</item>
+        <item name="android:popupElevation">2dp</item>
+    </style>
+
+    <!-- This will set the fade in animation on all the activities by default -->
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+        <item name="android:windowEnterTransition">@android:anim/fade_in</item>
+        <item name="android:windowExitTransition">@android:anim/fade_out</item>
+    </style>
+
+    <!-- Style for search bar -->
+    <style name="ToolbarStyle" parent="ThemeOverlay.MaterialComponents.ActionBar">
+        <item name="searchViewStyle">@style/SearchViewStyle</item>
+        <item name="popupMenuBackground">@drawable/popupmenu_background</item>
+    </style>
+
+    <!-- Style for equalizer toolbar -->
+    <style name="ToolbarStyle.Eq" parent="ThemeOverlay.MaterialComponents.ActionBar">
+        <item name="popupMenuBackground">@drawable/popupmenu_background</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingLeft">4dp</item>
+    </style>
+
+    <!-- Style for search view -->
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView.ActionBar">
+        <item name="searchIcon">@drawable/ic_search</item>
+    </style>
+
+    <style name="ToolbarStyle.Title" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ToolbarStyle.Subtitle" parent="@style/TextAppearance.MaterialComponents.Caption" />
+
+    <!-- Style for rounded cover ImageViews -->
+    <style name="ImageView.Cover" parent="">
+        <item name="cornerSize">8dp</item>
+    </style>
+</resources>

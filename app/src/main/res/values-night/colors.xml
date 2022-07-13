@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red">@color/red_200</color>
+    <color name="pink">@color/pink_200</color>
+    <color name="purple">@color/purple_200</color>
+    <color name="deep_purple">@color/deep_purple_200</color>
+    <color name="indigo">@color/indigo_200</color>
+    <color name="blue">@color/blue_200</color>
+    <color name="light_blue">@color/light_blue_200</color>
+    <color name="cyan">@color/cyan_200</color>
+    <color name="teal">@color/teal_200</color>
+    <color name="green">@color/green_200</color>
+    <color name="light_green">@color/light_green_200</color>
+    <color name="lime">@color/lime_200</color>
+    <color name="yellow">#fff59d</color>
+    <color name="amber">@color/amber_200</color>
+    <color name="orange">@color/orange_200</color>
+    <color name="deep_orange">@color/deep_orange_200</color>
+    <color name="brown">@color/brown_200</color>
+    <color name="grey">#eeeeee</color>
+    <color name="blue_grey">@color/blue_grey_200</color>
+
+    <color name="widgetsColor">#fafafa</color>
+
+    <color name="mainBg">#151515</color>
+    <color name="systemBarBg">#111111</color>
+    <color name="toolbarBg">@color/systemBarBg</color>
+</resources>

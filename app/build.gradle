@@ -1,0 +1,105 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 32
+    //noinspection GradleDependency
+    buildToolsVersion "32.0.0"
+    defaultConfig {
+        applicationId "com.iven.musicplayergo"
+        minSdkVersion 21
+        targetSdkVersion 32
+        versionCode 181
+        versionName "4.4.18"
+
+        vectorDrawables.useSupportLibrary true
+    }
+
+    //retrieve version number
+    applicationVariants.all { variant ->
+        resValue "string", "versionName", variant.versionName
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            resValue "string", "app_name", "@string/app_name_release"
+        }
+        debug {
+            applicationIdSuffix ".debug"
+            resValue "string", "app_name", "@string/app_name_debug"
+            debuggable true
+        }
+    }
+
+    bundle {
+        language {
+            // Specifies that the app bundle should not support
+            // configuration APKs for language resources. These
+            // resources are instead packaged with each base and
+            // dynamic feature APK.
+            enableSplit = false
+        }
+    }
+
+    // Configure only for each module that uses Java 8
+    // language features (either in its source code or
+    // through dependencies).
+    compileOptions {
+        encoding "UTF-8"
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    // For Kotlin projects
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+
+    lintOptions {
+        disable 'MissingTranslation', 'AllowBackup',
+                'GoogleAppIndexingWarning'
+    }
+
+    packagingOptions {
+        exclude 'META-INF/*'
+    }
+}
+
+dependencies {
+// Kotlin
+    //https://github.com/JetBrains/kotlin/blob/master/ChangeLog.md
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    //https://github.com/Kotlin/kotlinx.coroutines/blob/master/CHANGES.md
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1'
+
+// Support
+    //https://developer.android.com/jetpack/androidx/versions
+    implementation 'androidx.browser:browser:1.4.0'
+    implementation 'androidx.core:core-ktx:1.8.0'
+    implementation 'androidx.media:media:1.6.0'
+    implementation 'androidx.preference:preference-ktx:1.2.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    //https://github.com/material-components/material-components-android/releases
+    implementation 'com.google.android.material:material:1.6.1'
+
+// Third-party
+    //https://mvnrepository.com/artifact/com.squareup.moshi/moshi-kotlin
+    implementation 'com.squareup.moshi:moshi:1.13.0'
+    kapt 'com.squareup.moshi:moshi-kotlin-codegen:1.13.0'
+
+    //https://github.com/zhanghai/AndroidFastScroll/releases
+    implementation 'me.zhanghai.android.fastscroll:library:1.1.8'
+
+    //https://github.com/coil-kt/coil/releases
+    implementation 'io.coil-kt:coil:2.1.0'
+}
